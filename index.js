@@ -26,13 +26,13 @@ MusicPlayer3D_View.prototype = {
         }
 
         // 飞行控件
-        this.flyControl = new THREE.FlyControls(this.camera);
+        /*this.flyControl = new THREE.FlyControls(this.camera);
         this.flyControl.domElement = document.body;
         this.flyControl.movementSpeed = 250;
         this.flyControl.rollSpeed = Math.PI / 6;
         this.flyControl.autoForward = false;
         this.flyControl.dragToLook = false;
-        this.clock = new THREE.Clock();
+        this.clock = new THREE.Clock();*/
         //this.flyControl = new FlyControl(this.camera);
 
         this.renderer.domElement.width = window.innerWidth;
