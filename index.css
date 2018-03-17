@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul{
+    list-style-type: none;
+}
+
+body div {
+    position: absolute;
+}
+
+
+#mouseover_down{
+    width: 100%;
+    height: 15%;
+    bottom: 0;
+}
+#mouseover_down  div{
+    position: absolute;
+}
+#controller{
+    width: 100%;
+    height: 100%;
+    bottom: -100%;
+    background-color: black;
+    transition: bottom 0.3s;
+}
+#mouseover_down:hover #controller{
+    bottom: 0;
+}
+
+
+#play_button{
+    overflow: hidden;
+    cursor: pointer;
+}
+#search_panel_button{
+    cursor: pointer;
+    left: 70%;
+    top: 10%;
+    color: white;
+}
+
+
+.search_panel{
+    top: 4%;
+    left: 15%;
+    width: 70%;
+    height: 80%;
+    background-color: #00aaff;
+
+    transform: rotateY(90deg);
+    transition: transform 0.3s;
+}
+.search_panel_rotated{
+    transform: rotateY(0deg);
+}
+
+
+.search_input_container{
+    top: 4%;
+    left: 2%;
+    width: 30%;
+    height: 4%;
+    background-color: whitesmoke;
+    border-radius: 12px;
+}
+#search_input{
+    position: absolute;
+    background-color: whitesmoke;
+    left: 2%;
+    width: 96%;
+    height: 100%;
+    outline: 0;
+}
+
+
+.search_list_container{
+    left: 0;
+    top: 12%;
+    width: 100%;
+    height: 88%;
+    background-color: whitesmoke;
+}
+
+.search_list_head{
+    width: 100%;
+    height: 5%;
+    border-bottom: 0px solid black;
+}
+.search_list_head div{
+    top: -1px;
+}
+.search_list_order{
+    width: 3%;
+    height: 100%;
+    background-color: whitesmoke;
+}
+.search_list_title{
+    left: 3%;
+    width: 35%;
+    height: 100%;
+    background-color: white;
+}
+.search_list_singer{
+    left: 38%;
+    width: 20%;
+    height: 100%;
+}
+.search_list_album{
+    left: 58%;
+    width: 20%;
+    height: 100%;
+    background-color: white;
+}
+.search_list_time{
+    left: 78%;
+    width: 10%;
+    height: 100%;
+}
+
+#search_list{
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    height: 100%;
+}
+#search_list li{
+    position: relative;
+    width: 100%;
+    height: 5%;
+    border: 1px solid black;
+}
+
+#search_close_button{
+    width: 30px;
+    height: 30px;
+    background-color: whitesmoke;
+    right: 1%;
+    top: 2%;
+    cursor: pointer;
+}
