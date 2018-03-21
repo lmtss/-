@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
 <div id="mouseover_down">
     <div id="controller">
-        <div id="play_button"></div>
-        <div id="search_panel_button">Search Songs</div>
+        <div id="play_button">
+            <canvas id="play_button_img"></canvas>
+        </div>
+        <span id="title"></span>
+        <span id="singer"></span>
+        <span id="album"></span>
+        <span id="current_time">00:00</span>
+        <span id="duration_time">00:00</span>
+        <div id="duration_bar"></div>
+        <div id="current_bar"></div>
+        <div id="search_panel_button">More Songs</div>
     </div>
 </div>
 <div class="search_panel">

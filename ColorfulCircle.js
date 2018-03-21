@@ -112,5 +112,8 @@ ColorfulCircle.prototype.play = function () {
 ColorfulCircle.prototype.changePlay = function () {
     this.isPlay = !this.isPlay;
 }
+ColorfulCircle.prototype.dom = function () {
+    return this.renderer.domElement;
+}
 
 
